@@ -42,8 +42,6 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
-TARGET_HAVE_QC_PERF:=true
-
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/motorola/victara_retcn/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 vmalloc=400M utags.blkdev=/dev/block/platform/msm_sdcc.1/by-name/utags androidboot.bootdevice=msm_sdcc.1
