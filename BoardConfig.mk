@@ -26,6 +26,11 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 # Assert
 TARGET_OTA_ASSERT_DEVICE := victara,victara_retcn
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_victara_retcn.c
+TARGET_UNIFIED_DEVICE := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
