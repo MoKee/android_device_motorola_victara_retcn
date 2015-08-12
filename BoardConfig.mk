@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The MoKee OpenSource Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -52,7 +53,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_KERNEL_SOURCE := kernel/motorola/victara_retcn
-TARGET_KERNEL_CONFIG := cyanogenmod_victara_defconfig
+TARGET_KERNEL_CONFIG := mokee_victara_defconfig
 
 # Audio
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
@@ -97,7 +98,7 @@ EXTENDED_FONT_FOOTPRINT := true
 TARGET_GPS_HAL_PATH := device/motorola/victara_retcn/gps
 
 # Hardware
-BOARD_HARDWARE_CLASS := device/motorola/victara_retcn/cmhw
+BOARD_HARDWARE_CLASS := device/motorola/victara_retcn/mkhw
 
 # Init
 TARGET_NR_SVC_SUPP_GIDS := 32
@@ -183,13 +184,3 @@ TARGET_USES_WCNSS_CTRL := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_DRIVER_FW_PATH_STA   := "sta"
 WIFI_DRIVER_FW_PATH_AP    := "ap"
-
-# Enable dex-preoptimization to speed up first boot sequence
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-      WITH_DEXPREOPT_COMP := false
-    endif
-  endif
-endif
