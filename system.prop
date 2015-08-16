@@ -101,3 +101,6 @@ audio.offload.pcm.24bit.enable=true
 
 # frp
 ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/frp
+
+# Play store
+ro.com.google.clientidbase.gmm=android-motorola
