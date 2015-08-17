@@ -181,3 +181,7 @@ TARGET_USES_WCNSS_CTRL := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_DRIVER_FW_PATH_STA   := "sta"
 WIFI_DRIVER_FW_PATH_AP    := "ap"
+
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := /home/bsquare/Mokee/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/bin/arm-eabi-
+TARGET_GCC_VERSION_EXP := 4.9
+
