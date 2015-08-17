@@ -26,13 +26,8 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 # Assert
 TARGET_OTA_ASSERT_DEVICE := victara,victara_retcn
 
-# Use Custom Toolchains
-ifeq ($(HOST_OS),linux)
-TARGET_GCC_VERSION_EXP := 4.9
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+# Use SaberMod Toolchains
 SABERMOD_TOOLCHAIN_ENABLED := true
-endif
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8974

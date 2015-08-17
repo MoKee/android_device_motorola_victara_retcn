@@ -13,8 +13,8 @@
   },
 
   {
-    "repository": "android_prebuilts_gcc_linux-x86_arm_sabermod-prebuilts",
-    "target_path": "prebuilts/gcc/linux-x86/arm/sabermod-prebuilts"
+    "repository": "android_prebuilts_gcc_linux-x86_arm_sabermod",
+    "target_path": "prebuilts/gcc/linux-x86/arm/sabermod"
   },
   {
     "repository": "android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.9",
