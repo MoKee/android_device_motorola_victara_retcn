@@ -10,5 +10,18 @@
   {
     "repository": "android_kernel_motorola_victara_retcn",
     "target_path": "kernel/motorola/victara_retcn"
+  },
+
+  {
+    "repository": "android_prebuilts_gcc_linux-x86_arm_sabermod-prebuilts",
+    "target_path": "prebuilts/gcc/linux-x86/arm/sabermod-prebuilts"
+  },
+  {
+    "repository": "android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.9",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi-4.9"
+  },
+  {
+    "repository": "android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+    "target_path": "prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9"
   }
 ]
