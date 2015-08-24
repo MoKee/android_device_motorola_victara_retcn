@@ -6,6 +6,7 @@ on early-init
     # Set boot up stage I/O scheduler
     write /sys/block/mmcblk0/queue/scheduler noop
     write /sys/block/mmcblk0/queue/read_ahead_kb 512
+    write /sys/block/mmcblk0/queue/add_random 0
 
     # Create PDS mount point
     mkdir /pds 0755 root root
@@ -163,10 +164,10 @@ on post-fs-data
     start batt_health
     start hvdcp
 
-on post-fs
-    swapon_all fstab.qcom
-    write /proc/sys/vm/page-cluster 0
-    write /proc/sys/vm/swappiness 100
+#on post-fs
+    #swapon_all fstab.qcom
+    #write /proc/sys/vm/page-cluster 0
+    #write /proc/sys/vm/swappiness 100
 
 # To report kernel panic
 service apanic_annotate  /system/bin/sh /system/bin/apanic_annotate.sh build
@@ -404,7 +405,7 @@ service bugreport /system/bin/bug2go-bugreport
     keycodes 115 116 # VOLUME_UP + PWR
 
 on property:sys.boot_completed=1
-    write /sys/block/mmcblk0/queue/scheduler row
+    write /sys/block/mmcblk0/queue/scheduler bfq
 
 service mmi-boot-sh /system/bin/sh /init.mmi.boot.sh
     class core
