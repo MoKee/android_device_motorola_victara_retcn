@@ -11,6 +11,4 @@ PRODUCT_NAME := mk_victara_retcn
 PRODUCT_MODEL := XT1085
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=victara_retcn \
-    BUILD_FINGERPRINT=motorola/victara_retcn/victara:5.0.2/LXE22.92-30/30:user/release-keys \
-    PRIVATE_BUILD_DESC="victara_retcn-user 5.0.2 LXE22.92-30 30 release-keys"
+    PRODUCT_NAME=victara_retcn
