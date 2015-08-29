@@ -60,6 +60,7 @@ void vendor_load_properties()
         property_set("ro.telephony.get_imsi_from_sim", "true");
         property_set("ro.telephony.default_cdma_sub", "0");
         property_set("ro.cdma.subscription", "0");
+        property_set("persist.radio.mcfg_enabled", "1");
     } else {
         /* all others */
         property_set("ro.product.model", "XT1095");
