@@ -56,8 +56,6 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "motorola/victara_retcn/victara:5.1/LPE23.32-53/41:user/release-keys");
         property_set("ro.telephony.default_network", "22");
         property_set("telephony.lteOnCdmaDevice", "1");
-        property_set("ro.ril.force_eri_from_xml", "true");
-        property_set("ro.telephony.get_imsi_from_sim", "true");
         property_set("ro.telephony.default_cdma_sub", "0");
         property_set("ro.cdma.subscription", "0");
         property_set("persist.radio.mcfg_enabled", "1");
