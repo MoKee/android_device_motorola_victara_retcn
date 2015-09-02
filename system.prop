@@ -92,12 +92,12 @@ camera2.portability.force_api=1
 
 # Media
 audio.offload.buffer.size.kb=32
-av.offload.enable=true
-av.streaming.offload.enable=true
+av.offload.enable=false
+av.streaming.offload.enable=false
 audio.offload.multiple.enabled=false
-audio.offload.gapless.enabled=true
-audio.offload.pcm.16bit.enable=true
-audio.offload.pcm.24bit.enable=true
+audio.offload.gapless.enabled=false
+audio.offload.pcm.16bit.enable=false
+audio.offload.pcm.24bit.enable=false
 
 # frp
 ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/frp
