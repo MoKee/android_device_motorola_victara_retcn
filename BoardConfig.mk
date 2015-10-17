@@ -19,6 +19,8 @@
 
 LOCAL_PATH := device/motorola/victara_retcn
 
+MK_TOOLCHAIN_VARIANT := uber
+
 BOARD_VENDOR := motorola-qcom
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
@@ -42,8 +44,6 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := krait
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
-
-MK_TOOLCHAIN_VARIANT := uber
 
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/motorola/victara_retcn/mkbootimg.mk
