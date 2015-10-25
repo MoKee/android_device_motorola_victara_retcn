@@ -104,3 +104,6 @@ ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/frp
 
 # Play store
 ro.com.google.clientidbase.gmm=android-motorola
+
+# Maintainer
+ro.mk.maintainer=parhelia
