@@ -16,7 +16,7 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/motorola/victara_retcn/victara-vendor.mk)
+$(call inherit-product, vendor/motorola/victara_retcn/victara_retcn-vendor.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
