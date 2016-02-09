@@ -64,7 +64,7 @@ persist.qcril_uim_vcc_feature=1
 # Gps Smart Battery Savings (depends on sensor hub)
 persist.mot.gps.smart_battery=1
 
-# USB
+# USB product ids
 ro.usb.mtp=0x2e82
 ro.usb.mtp_adb=0x2e76
 ro.usb.ptp=0x2e83
@@ -74,8 +74,6 @@ ro.usb.bpt_adb=0x2e29
 ro.usb.bpteth=0x2e2a
 ro.usb.bpteth_adb=0x2e2b
 
-persist.sys.isUsbOtgEnabled=true
-
 # Screen density
 ro.sf.lcd_density=480
 
@@ -83,7 +81,7 @@ ro.sf.lcd_density=480
 ro.hw.device=victara
 
 # QCOM
-ro.vendor.extension_library=/vendor/lib/libqc-opt.so
+ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
 # Radio
 persist.radio.apn_delay=5000
@@ -91,20 +89,8 @@ persist.radio.apn_delay=5000
 # Camera
 camera2.portability.force_api=1
 
-# Media
-audio.offload.buffer.size.kb=32
-av.offload.enable=false
-av.streaming.offload.enable=false
-audio.offload.multiple.enabled=false
-audio.offload.gapless.enabled=false
-audio.offload.pcm.16bit.enable=false
-audio.offload.pcm.24bit.enable=false
-
-# frp
-ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/frp
-
 # Play store
 ro.com.google.clientidbase.gmm=android-motorola
 
-# Maintainer
-ro.mk.maintainer=parhelia
+# Wifi
+ro.disableWifiApFirmwareReload=true

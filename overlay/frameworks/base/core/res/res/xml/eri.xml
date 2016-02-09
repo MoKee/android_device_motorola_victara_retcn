@@ -23,3 +23,4 @@
     <EriInfo RoamingIndicator="78" IconIndex="1" IconMode="0" EriText="Network Extender" CallPromptId="0" AlertId="1" DataServiceSupport="1" />
     <EriInfo RoamingIndicator="79" IconIndex="3" IconMode="1" EriText="Network Extender" CallPromptId="0" AlertId="1" DataServiceSupport="1" />
 </EriFile>
+

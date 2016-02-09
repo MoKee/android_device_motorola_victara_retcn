@@ -87,7 +87,6 @@ lib/libmot-qc-fd-offline.so
 lib/libmotocalibration.so
 lib/libqomx_core.so
 vendor/lib/libadsprpc.so
-vendor/lib/libC2D2.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -126,6 +125,9 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libthermalclient.so
 
+# Charge only mode
+bin/charge_only_mode
+
 # Chromatix
 lib/libchromatix_ar0543_common.so
 lib/libchromatix_ar0543_default_video.so
@@ -163,34 +165,39 @@ vendor/lib/libchromatix_s5k5e2_snapshot.so
 # CPU
 bin/mpdecision
 bin/thermal-engine
-vendor/lib/libqc-opt.so
+vendor/lib/libqti-perfd-client.so
 vendor/lib/libthermalioctl.so
 
 # DRM
 bin/qseecomd
+lib/drm/libfwdlockengine.so
 lib/libdrmdecrypt.so
 vendor/firmware/widevine.b00
 vendor/firmware/widevine.b01
 vendor/firmware/widevine.b02
 vendor/firmware/widevine.b03
 vendor/firmware/widevine.mdt
+vendor/lib/lib-sec-disp.so
+vendor/lib/libDivxDrm.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/libSHIMDivxDrm.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libQSEEComAPI.so
+vendor/lib/libmmosal.so
+vendor/lib/librpmb.so
 vendor/lib/libsecureui.so
-vendor/lib/lib-sec-disp.so
+vendor/lib/libssd.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
+vendor/lib/libWVphoneAPI.so
 vendor/lib/libWVStreamControlAPI_L1.so
 
 # GPS
 -app/com.qualcomm.location/com.qualcomm.location.apk
 -app/com.qualcomm.services.location/com.qualcomm.services.location.apk
--app/MotGeoFenceSvc/MotGeoFenceSvc.apk
 bin/gpsone_daemon
 etc/permissions/com.qualcomm.location.xml
 etc/gps.conf
@@ -226,7 +233,6 @@ vendor/lib/librs_adreno_sha1.so
 vendor/lib/librs_adreno.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/libsc-a3xx.so
-vendor/lib/libscale.so
 
 # Graphics firmware
 etc/firmware/a330_pfp.fw
@@ -252,17 +258,8 @@ vendor/lib/lib-rtpdaemoninterface.so
 vendor/lib/lib-rtpsl.so
 
 # Media
-vendor/lib/libDivxDrm.so
-vendor/lib/libExtendedExtractor.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal.so
-vendor/lib/libmmparser.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxWmaDec.so
 
 # Media firmware
 etc/firmware/venus.b00
@@ -277,17 +274,9 @@ etc/firmware/venus.mdt
 bin/batt_health
 bin/dbvc_atvc_property_set
 bin/hardware_revisions.sh
-bin/mount_ext4.sh
 
 # NFC
 etc/firmware/BCM20795A1_001.002.012.0003.0078_Generic_I2C_NCD_Signed_configdata.ncd
-
-# Postprocessing
-bin/mm-pp-daemon
-vendor/lib/libmm-abl.so
-vendor/lib/libmm-abl-oem.so
-vendor/lib/libdisp-aba.so
-vendor/lib/libsensor1.so
 
 # Qualcomm framework
 bin/irsc_util
@@ -314,11 +303,11 @@ bin/netmgrd
 bin/qcks
 bin/qmi_motext_hook
 bin/qmuxd
-bin/rild:bin/rild.mmi
+bin/radish
+bin/rild
 bin/rfs_access
 bin/rmt_storage
 lib/libadropbox.so
-lib/libcnefeatureconfig.so
 lib/libmdmcutback.so
 lib/libmdmdetect.so
 lib/libmotext_inf.so
@@ -343,6 +332,7 @@ etc/firmware/sensorhubver_p0.txt
 etc/firmware/sensorhubver.txt
 lib/hw/sensorhub.msm8974.so
 lib/hw/sensors.msm8974.so
+vendor/lib/libsensor1.so
 
 # Time
 bin/time_daemon

@@ -43,8 +43,6 @@
 /dev/smd6                 0660   system     system
 /dev/smd7                 0660   bluetooth  bluetooth
 
-/dev/block/platform/msm_sdcc.1/by-name/frp 0600 system system
-
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
 
@@ -262,3 +260,10 @@
 
 # FB Quickdraw
 /dev/fb_quickdraw         0660  system     graphics
+
+# Partitions
+/dev/block/platform/msm_sdcc.1/by-name/hob          0660 root radio
+/dev/block/platform/msm_sdcc.1/by-name/dhob         0660 root radio
+/dev/block/platform/msm_sdcc.1/by-name/clogo        0660 root mot_tcmd
+/dev/block/platform/msm_sdcc.1/by-name/cid          0660 root mot_dbvc
+/dev/block/platform/msm_sdcc.1/by-name/logs         0640 root system
