@@ -370,5 +370,10 @@
         don't support RIL_REQUEST_GET_RADIO_CAPABILITY
         format is UMTS|LTE|... -->
    <string translatable="false" name="config_radio_access_family">GSM|WCDMA|CDMA|LTE|EVDO</string>
+
+   <integer name="config_extraFreeKbytesAbsolute">30720</integer>
+
+   <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">204800</integer>
+
 </resources>
 
