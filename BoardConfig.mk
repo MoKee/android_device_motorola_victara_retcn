@@ -154,7 +154,7 @@ BOARD_SEPOLICY_DIRS += device/motorola/victara_retcn/sepolicy
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_victara
-TARGET_LIBINIT_DEFINES_FILE := device/motorola/victara_retcn/init/init_victara.cpp
+TARGET_RECOVERY_DEVICE_MODULES := libinit_victara
 
 # Vold
 BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
