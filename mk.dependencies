@@ -8,10 +8,6 @@
     "target_path": "kernel/motorola/victara_retcn"
   },
   {
-    "repository": "android_external_connectivity",
-    "target_path": "external/connectivity"
-  },
-  {
     "repository": "android_vendor_motorola_victara_retcn",
     "target_path": "vendor/motorola/victara_retcn"
   }

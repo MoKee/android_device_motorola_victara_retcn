@@ -115,6 +115,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap \
+    libshim_camera \
     camera.msm8974
 
 # Charger
@@ -235,13 +236,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-victara.conf:system/etc/thermal-engine-victara.conf
 
+PRODUCT_PACKAGES += \
+    libshims_thermal
+
 # Torch
 PRODUCT_PACKAGES += \
     Torch
 
 # Wifi
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd \
     hostapd_default.conf \
     hostapd.accept \

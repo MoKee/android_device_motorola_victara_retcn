@@ -233,6 +233,7 @@ vendor/lib/librs_adreno_sha1.so
 vendor/lib/librs_adreno.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/libsc-a3xx.so
+vendor/lib/libuiblur.so
 
 # Graphics firmware
 etc/firmware/a330_pfp.fw
@@ -304,7 +305,6 @@ bin/qcks
 bin/qmi_motext_hook
 bin/qmuxd
 bin/radish
-bin/rild
 bin/rfs_access
 bin/rmt_storage
 lib/libadropbox.so
@@ -312,7 +312,6 @@ lib/libmdmcutback.so
 lib/libmdmdetect.so
 lib/libmotext_inf.so
 lib/libqmimotext.so
-lib/libril.so
 vendor/lib/libconfigdb.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libsystem_health_mon.so
