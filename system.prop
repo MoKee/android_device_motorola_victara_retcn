@@ -100,5 +100,12 @@ ro.sys.sdcardfs=true
 # Wifi
 ro.disableWifiApFirmwareReload=true
 
+# recording
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+
+# bg apps
+ro.sys.fw.bg_apps_limit=16
+
 # Maintainer
 ro.mk.maintainer=parhelia
